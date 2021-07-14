@@ -1,0 +1,19 @@
+.tours__card {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+
+  &:link {
+    text-align: center;
+    padding-top: 7rem;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 7rem;
+      background-color: white;
+      margin: 1rem auto;
+    }
+  }
+}

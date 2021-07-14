@@ -1,0 +1,30 @@
+@import "sass/abstracts/variables";
+
+.why__card {
+  height: 20rem;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 3rem 3rem;
+  transition: all .2s linear;
+
+  &__heading {
+    color: $color-primary;
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin: 2rem 0;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: $color-primary;
+
+    .why__card__heading {
+      color: $color-white;
+    }
+
+    p {
+      color: rgba($color-white, 0.7);
+    }
+  }
+
+}

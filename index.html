@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>American Airlines</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav__logo">
+          <img
+            class="nav__logo__image"
+            src="images/logo.png"
+            alt="American Airlines logo"
+          />
+        </a>
+        <ul class="nav__links">
+          <li class="nav__links__item">Plan Travel</li>
+          <li class="nav__links__item">Travel Information</li>
+          <li class="nav__links__item">Advantage</li>
+          <li class="nav__links__item">English</li>
+          <li class="nav__links__item">
+            <a class="btn btn__primary" href="">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="container">
+        <h1>Travel with peace of mind</h1>
+        <h4>
+          Visit your favorite countries in happiness and get ticket at
+          affordable prices.
+        </h4>
+        <form class="header__form" action="">
+          <div class="header__form__search">
+            <img class="prefix-icon" src="icons/search.svg" alt="" />
+            <input
+              type="text"
+              placeholder="Search AA.com"
+              class="header__form__search-input"
+            />
+          </div>
+          <input
+            type="button"
+            value="SEARCH"
+            class="btn btn__primary header__form__search-btn"
+          />
+        </form>
+      </div>
+    </header>
+    <section class="forms">
+      <div class="container">
+        <form>
+          <div class="forms__grid">
+            <div class="forms__grid-1">
+              <div class="forms__heading">
+                <img
+                  class="forms__heading__icon"
+                  src="icons/airplane.svg"
+                  alt=""
+                />
+                <h3 class="forms__heading__title active">Book Flight</h3>
+              </div>
+              <div class="forms__heading">
+                <img class="forms__heading__icon" src="icons/tag.svg" alt="" />
+                <h3 class="forms__heading__title">Manage Trips/ Check-in</h3>
+              </div>
+              <div class="forms__heading">
+                <img
+                  class="forms__heading__icon"
+                  src="icons/clock.svg"
+                  alt=""
+                />
+                <h3 class="forms__heading__title">Flight Status</h3>
+              </div>
+            </div>
+            <div class="forms__grid-2">
+              <div class="form__radio">
+                <input
+                  class="form__radio__input"
+                  id="round"
+                  type="radio"
+                  name="type"
+                />
+                <label class="form__radio__label" for="round">Round Trip</label>
+              </div>
+              <div class="form__radio">
+                <input
+                  class="form__radio__input"
+                  id="one"
+                  type="radio"
+                  name="type"
+                />
+                <label class="form__radio__label" for="one">One Way</label>
+              </div>
+              <div class="form__radio">
+                <input
+                  class="form__radio__input"
+                  id="redeem"
+                  type="radio"
+                  name="type"
+                />
+                <label class="form__radio__label" for="redeem"
+                  >Redeem Miles</label
+                >
+              </div>
+              <div class="form__field">
+                <label for="" class="form__field__label">From</label>
+                <div class="form__field__item">
+                  <img class="prefix-icon" src="icons/search.svg" alt="" />
+                  <input
+                    placeholder="City or airport"
+                    type="text"
+                    class="form__field__input"
+                  />
+                </div>
+              </div>
+              <div class="form__field">
+                <label for="" class="form__field__label">To</label>
+                <div class="form__field__item">
+                  <img class="prefix-icon" src="icons/search.svg" alt="" />
+                  <input
+                    placeholder="City or airport"
+                    type="text"
+                    class="form__field__input"
+                  />
+                </div>
+              </div>
+              <div class="form__field">
+                <label for="" class="form__field__label"
+                  >No of Passengers</label
+                >
+                <div class="form__field__item">
+                  <input type="number" value="1" class="form__field__input" />
+                </div>
+              </div>
+              <div class="form__field">
+                <label for="" class="form__field__label">Class</label>
+                <div class="form__field__item">
+                  <select class="form__field__input">
+                    <option value="Economy">Economy</option>
+                    <option value="Business">Business Class</option>
+                    <option value="First">First Class</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__field">
+                <label for="" class="form__field__label">Departure Date</label>
+                <div class="form__field__item">
+                  <img class="prefix-icon" src="icons/calendar.svg" alt="" />
+                  <input type="date" class="form__field__input" />
+                </div>
+              </div>
+              <div class="form__field">
+                <label for="" class="form__field__label">Return Date</label>
+                <div class="form__field__item">
+                  <img class="prefix-icon" src="icons/calendar.svg" alt="" />
+                  <input type="date" class="form__field__input" />
+                </div>
+              </div>
+            </div>
+            <input
+              type="button"
+              value="BOOK FLIGHT"
+              class="btn btn__primary header__form__search-btn forms__submit"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="why">
+      <div class="container">
+        <h2 class="section__heading">Why fly with us?</h2>
+        <div class="why__cards">
+          <div class="why__card">
+            <h3 class="why__card__heading">Unbeatable Deals</h3>
+            <p>
+              Experience more for less with our exclusive deals and packages.
+            </p>
+          </div>
+          <div class="why__card">
+            <h3 class="why__card__heading">Most Trusted Platform</h3>
+            <p>
+              We've sold over 20 million tickets and rated as 'Excellent' on
+              TrustPilot.
+            </p>
+          </div>
+          <div class="why__card">
+            <h3 class="why__card__heading">Cancellable Tickets</h3>
+            <p>Stay flexible with free cancellation options on your tickets.</p>
+          </div>
+          <div class="why__card">
+            <h3 class="why__card__heading">Security Guaranteed</h3>
+            <p>
+              Your security is absolutely guaranteed with American Airlines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="container">
+        <h2 class="section__heading">Today's Offers</h2>
+        <div class="offers__cards">
+          <div class="card">
+            <img src="images/paris.jpg" alt="" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__heading">Trip to Paris</h3>
+              <p>
+                From seasonal deals to early-bird discounts, find more ways to
+                culture and save when you book them!
+              </p>
+              <a href="" class="btn btn__secondary">See Deal</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/california.jpg" alt="" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__heading">Trip to California</h3>
+              <p>
+                From seasonal deals to early-bird discounts, find more ways to
+                culture and save when you book them!
+              </p>
+              <a href="" class="btn btn__secondary">See Deal</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/miami.jpg" alt="" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__heading">Trip to Miami</h3>
+              <p>
+                From seasonal deals to early-bird discounts, find more ways to
+                culture and save when you book them!
+              </p>
+              <a href="" class="btn btn__secondary">See Deal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="commitment">
+      <div class="container">
+        <div class="commitment__grid">
+          <img src="images/commitment.jpg" alt="" class="commitment__image" />
+          <div class="commitment__body">
+            <h2 class="section__heading">American Airlines Commitment</h2>
+            <p>
+              We've enhanced our cleaning procedures and added new protocols at
+              every step to reduce risks when you fly. American Airline cares
+              about your health and everything that belongs to you. We are here
+              to give you the best commitment to your flight.
+            </p>
+            <p>
+              We've enhanced our cleaning procedures and added new protocols at
+              every step to reduce risks when you fly. American Airline cares
+              about your health and everything that belongs to you. We are here
+              to give you the best commitment to your flight.
+            </p>
+            <a class="btn btn__primary" href="">SEE COMMITMENT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours">
+      <div class="container">
+        <h2 class="section__heading">Tours and Activities</h2>
+        <div class="tours__grid">
+          <a href="" class="tours__card row-2 germany"> Germany </a>
+          <a href="" class="tours__card france"> France </a>
+          <a href="" class="tours__card sweden"> Sweden </a>
+          <a href="" class="tours__card ghana"> Ghana </a>
+          <a href="" class="tours__card australia"> Australia </a>
+        </div>
+      </div>
+    </section>
+    <!--The travel news section is identical to the offers section so I just used the same code☺️-->
+    <section class="offers">
+      <div class="container">
+        <h2 class="section__heading">Travel News</h2>
+        <div class="offers__cards">
+          <div class="card">
+            <img src="images/travel.jpg" alt="" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__heading">Travel benefit</h3>
+              <p>
+                From seasonal deals to early-bird discounts, find more ways to
+                culture and save when you book them!
+              </p>
+              <a href="" class="btn btn__secondary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/ghana2.jpg" alt="" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__heading">Accra's best places</h3>
+              <p>
+                From seasonal deals to early-bird discounts, find more ways to
+                culture and save when you book them!
+              </p>
+              <a href="" class="btn btn__secondary">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/ny.jpg" alt="" class="card__image" />
+            <div class="card__body">
+              <h3 class="card__heading">New York City</h3>
+              <p>
+                From seasonal deals to early-bird discounts, find more ways to
+                culture and save when you book them!
+              </p>
+              <a href="" class="btn btn__secondary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__grid__section">
+            <h3 class="card__heading">About American</h3>
+            <ul>
+              <li>
+                <a href="">About Us</a>
+              </li>
+              <li>
+                <a href="">Careers</a>
+              </li>
+              <li>
+                <a href="">Investor Relations</a>
+              </li>
+              <li>
+                <a href="">Newsroom</a>
+              </li>
+              <li>
+                <a href="">Legal, Privacy, Copyright</a>
+              </li>
+              <li>
+                <a href="">Environmental, Social and Governance</a>
+              </li>
+              <li>
+                <a href="">Combating Human Trafficking</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid__section">
+            <h3 class="card__heading">Help</h3>
+            <ul>
+              <li>
+                <a href="">Contact American</a>
+              </li>
+              <li>
+                <a href="">Receipts and Refunds</a>
+              </li>
+              <li>
+                <a href="">FAQs</a>
+              </li>
+              <li>
+                <a href="">Agency Reference</a>
+              </li>
+              <li>
+                <a href="">Cargo</a>
+              </li>
+              <li>
+                <a href="">Bags and Optional Fees</a>
+              </li>
+              <li>
+                <a href="">Conditions of Carriage</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid__section">
+            <h3 class="card__heading">Extras</h3>
+            <ul>
+              <li>
+                <a href="">Business Programs</a>
+              </li>
+              <li>
+                <a href="">Gift Cards</a>
+              </li>
+              <li>
+                <a href="">American Airline Credit Card</a>
+              </li>
+              <li>
+                <a href="">Trip Insurance</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__grid__section">
+            <img class="credit_cards" src="images/cards.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__footer">
+        <p>&copy; 2021 American Airlines</p>
+      </div>
+    </footer>
+  </body>
+</html>

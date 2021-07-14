@@ -1,0 +1,62 @@
+@import "sass/abstracts/variables";
+
+.nav {
+  background-color: #ffffff;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo__image {
+    height: 4rem;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem;
+
+    &__item {
+      margin-right: 5rem;
+      text-transform: uppercase;
+      color: $color-primary;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.header {
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90rem;
+  color: $color-white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 7.6rem;
+    font-weight: normal;
+  }
+
+  h4 {
+    font-weight: normal;
+    font-size: 2rem;
+    color: rgba($color-white, 0.7);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+}

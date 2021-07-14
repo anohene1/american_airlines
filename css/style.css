@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+section {
+  margin-top: 15rem; }
+
+section:first-of-type {
+  margin-top: -5rem; }
+
+.forms__grid {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 4rem 8rem;
+  border-radius: 10px; }
+  .forms__grid-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center; }
+  .forms__grid-2 {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: min-content;
+    grid-row-gap: 3rem;
+    grid-column-gap: 4rem; }
+
+.forms__heading {
+  display: flex; }
+  .forms__heading__icon {
+    height: 2rem;
+    transform: rotate(-90deg);
+    margin-right: 1rem; }
+  .forms__heading__title {
+    font-weight: normal;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5); }
+
+.forms__submit {
+  margin: 5rem auto;
+  display: block; }
+
+.active {
+  color: #0078D2; }
+  .active::after {
+    content: '';
+    height: 5px;
+    width: 8rem;
+    background-color: #0078D2;
+    display: block;
+    margin-top: 1rem; }
+
+.why__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem; }
+
+.offers__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem; }
+
+.commitment__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-column-gap: 5rem; }
+
+.commitment__image {
+  width: 100%;
+  height: 45rem; }
+
+.commitment__body {
+  padding: 4rem 1rem; }
+  .commitment__body p {
+    margin-bottom: 5rem; }
+
+.tours__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 40rem);
+  grid-gap: 2rem; }
+
+.tours .germany {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/germany.jpg");
+  background-size: cover; }
+
+.tours .ghana {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/ghana.jpg");
+  background-size: cover; }
+
+.tours .sweden {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/sweden.jpg");
+  background-size: cover; }
+
+.tours .france {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/france.jpg");
+  background-size: cover; }
+
+.tours .australia {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/australia.jpg");
+  background-size: cover; }
+
+.row-2 {
+  grid-row: span 2; }
+
+.nav {
+  background-color: #ffffff;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__logo__image {
+    height: 4rem; }
+  .nav__links {
+    list-style: none;
+    display: flex;
+    font-size: 1.5rem; }
+    .nav__links__item {
+      margin-right: 5rem;
+      text-transform: uppercase;
+      color: #0078D2; }
+      .nav__links__item:last-child {
+        margin-right: 0; }
+
+.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .header .container {
+    width: 100%; }
+  .header h1 {
+    font-size: 7.6rem;
+    font-weight: normal; }
+  .header h4 {
+    font-weight: normal;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 1.5rem;
+    margin-bottom: 3rem; }
+  .header__form {
+    display: flex;
+    align-items: center; }
+
+body {
+  font-family: "Gill Sans", sans-serif; }
+
+p {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.5); }
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto; }
+
+.btn {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px; }
+  .btn__primary {
+    background-color: #0078D2;
+    color: #ffffff;
+    padding: 1.5rem 6rem;
+    font-size: 1.5rem; }
+  .btn__secondary {
+    padding: 1rem 3.5rem;
+    border: 2px solid #0078D2;
+    font-size: 1.8rem;
+    color: #0078D2; }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none; }
+
+.header__form__search {
+  width: 60rem;
+  background-color: #ffffff;
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 5px; }
+  .header__form__search-input {
+    width: 100%;
+    height: 4.5rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    font-family: "Gill Sans", sans-serif; }
+    .header__form__search-input::placeholder {
+      font-family: "Gill Sans", sans-serif;
+      font-size: 2rem;
+      color: rgba(0, 0, 0, 0.3); }
+
+.prefix-icon {
+  height: 3rem;
+  margin-right: 1rem; }
+
+.form__radio {
+  display: flex;
+  align-items: center; }
+  .form__radio__input {
+    margin-right: 1rem; }
+  .form__radio__label {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.5); }
+
+.form__field__label {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.5); }
+
+.form__field__item {
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-radius: 5px;
+  margin-top: 2rem;
+  height: 4.5rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center; }
+  .form__field__item .prefix-icon {
+    height: 2rem; }
+
+.form__field__input {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: .7px;
+  color: rgba(0, 0, 0, 0.5); }
+  .form__field__input::placeholder {
+    color: rgba(0, 0, 0, 0.2); }
+
+.section__heading {
+  color: #0078D2;
+  font-weight: normal;
+  font-size: 2.8rem;
+  margin-bottom: 2.3rem; }
+
+.why__card {
+  height: 20rem;
+  border-radius: 5px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 3rem 3rem;
+  transition: all .2s linear; }
+  .why__card__heading {
+    color: #0078D2;
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin: 2rem 0; }
+  .why__card:hover {
+    transform: scale(1.1);
+    background-color: #0078D2; }
+    .why__card:hover .why__card__heading {
+      color: #ffffff; }
+    .why__card:hover p {
+      color: rgba(255, 255, 255, 0.7); }
+
+.card {
+  border-radius: 5px;
+  box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.2); }
+  .card__body {
+    padding: 3rem;
+    padding-bottom: 5rem; }
+  .card__heading {
+    color: #0078D2;
+    font-weight: normal;
+    font-size: 2.1rem;
+    margin-bottom: 2rem; }
+  .card__image {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 30rem; }
+  .card p {
+    margin-bottom: 4rem; }
+
+.tours__card {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white; }
+  .tours__card:link {
+    text-align: center;
+    padding-top: 7rem; }
+    .tours__card:link::after {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 7rem;
+      background-color: white;
+      margin: 1rem auto; }
+
+.footer {
+  margin-top: 30rem;
+  background-color: rgba(0, 120, 210, 0.1); }
+  .footer__footer {
+    background-color: #0078D2;
+    padding: 4rem 0;
+    text-align: center; }
+    .footer__footer p {
+      color: rgba(255, 255, 255, 0.7); }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .footer__grid__section {
+      margin: 7rem 0; }
+      .footer__grid__section ul {
+        list-style: none; }
+        .footer__grid__section ul li {
+          margin-bottom: 2.5rem; }
+          .footer__grid__section ul li a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: rgba(0, 0, 0, 0.5); }

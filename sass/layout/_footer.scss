@@ -1,0 +1,39 @@
+@import "sass/abstracts/variables";
+
+.footer {
+  margin-top: 30rem;
+  background-color: rgba($color-primary, 0.1);
+
+  &__footer {
+    background-color: $color-primary;
+    padding: 4rem 0;
+    text-align: center;
+
+    p {
+      color: rgba($color-white, 0.7);
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &__section {
+      margin: 7rem 0;
+
+      ul {
+        list-style: none;
+
+        li {
+          margin-bottom: 2.5rem;
+
+          a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

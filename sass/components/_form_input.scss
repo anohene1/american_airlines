@@ -1,0 +1,88 @@
+@import "sass/abstracts/variables";
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.header__form__search {
+  width: 60rem;
+  background-color: $color-white;
+  display: flex;
+  margin-right: 1rem;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 5px;
+
+  &-input {
+    width: 100%;
+    height: 4.5rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    font-family: "Gill Sans", sans-serif;
+
+    &::placeholder {
+      font-family: "Gill Sans", sans-serif;
+      font-size: 2rem;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.prefix-icon {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.form__radio {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    margin-right: 1rem;
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.form__field {
+  &__label {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__item {
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 2rem;
+    height: 4.5rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+    .prefix-icon {
+      height: 2rem;
+    }
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.7px;
+    color: rgba(0, 0, 0, 0.5);
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
