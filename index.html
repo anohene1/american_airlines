@@ -10,7 +10,20 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>American Airlines</title>
   </head>
-  <body>
+  <body class="modal-open">
+  <div class="modal">
+    <div class="modal__container">
+      <h2>Disclaimer!</h2>
+      <p>      This project doesn't have any sort of functionality or responsiveness. It was solely created to implement a
+        <a href="https://twitter.com/SpontaneousKemi/status/1333804765877157889">UI Design</a>. by <a
+                href="https://twitter.com/SpontaneousKemi">@SpontaneousKemi</a>
+      </p>
+      <button class="close-modal btn btn__primary">Understood</button>
+    </div>
+  </div>
+  <div class="desktop-only">
+    This website is not optimized for mobile viewing. Kindly use a big tablet or a computer.
+  </div>
     <div class="container">
       <nav class="nav">
         <a href="#" class="nav__logo">
@@ -405,5 +418,6 @@
         <p>&copy; 2021 American Airlines</p>
       </div>
     </footer>
+  <script src="index.js"></script>
   </body>
 </html>

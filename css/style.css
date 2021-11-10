@@ -12,6 +12,21 @@ section {
 section:first-of-type {
   margin-top: -5rem; }
 
+.desktop-only {
+  display: none; }
+
+@media (max-width: 1000px) {
+  .desktop-only {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    z-index: 5;
+    position: fixed;
+    background-color: white;
+    font-size: 18px;
+    padding: 20px; } }
+
 .forms__grid {
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
@@ -48,7 +63,7 @@ section:first-of-type {
 .active {
   color: #0078D2; }
   .active::after {
-    content: '';
+    content: "";
     height: 5px;
     width: 8rem;
     background-color: #0078D2;
@@ -239,7 +254,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: "Gill Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
   color: rgba(0, 0, 0, 0.5); }
   .form__field__input::placeholder {
     color: rgba(0, 0, 0, 0.2); }
@@ -302,6 +317,35 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       width: 7rem;
       background-color: white;
       margin: 1rem auto; }
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(5px); }
+  .modal.hidden {
+    display: none; }
+  .modal__container {
+    background-color: white;
+    width: 300px;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    display: grid; }
+    .modal__container h2, .modal__container p {
+      margin-bottom: 30px; }
+    .modal__container button {
+      cursor: pointer; }
+
+body.modal-open {
+  overflow: hidden; }
 
 .footer {
   margin-top: 30rem;
